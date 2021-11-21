@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+*{
+    box-sizing: border-box;
+}
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: calc(28px + 3vw);
+    letter-spacing: 3px;
+    color: white;
+}
+.sub-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: calc(24px + 2.25vw);
+    letter-spacing: 3px;
+    color: white;
+}
+.arial-400{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: white;
+}
+.sans-700{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: white;
+}
+.sans-400{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+}
+.text-orange{
+    color: #FFB548;
+}
+.btn{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.btn-warning{
+    background-color: #FFB548 !important;
+}
+
+#main-screen{
+    position: relative;
+    min-height: 500px;
+    height: 100vh;
+    max-height: 1080px;
+    background-image: url("https://media.discordapp.net/attachments/911613100657094701/911614643003338752/main-bg.jpg?width=943&height=629");
+    background-size: cover;
+    background-position: center bottom;
+}
+#main-screen .navbar-dark .navbar-nav .nav-link{
+    color: white !important;
+}
+#main-screen .navbar-brand{
+    font-size: 24px;
+    width: 15%;
+    letter-spacing: 3px;
+}
+#main-screen .konten{
+    position: absolute;
+    min-width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    justify-content: center;
+    text-align: center;
+}
+#main-screen .konten .btn{
+    width: 260px;
+    height: 60px;
+}
+#main-screen .the-story{
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+#main-screen .the-story .segitiga{
+    display: flex;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-top: 15px solid var(--bs-light);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+#main-screen .the-story:hover .segitiga{
+    border-top-color: #FFB548;
+}
+
+#game-choice{
+    position: relative;
+    min-height: 500px;
+    height: 100vh;
+    max-height: 1000px;
+    background-color: rgba(0, 0, 0, 0.25);
+    background-image: url("https://media.discordapp.net/attachments/911613100657094701/911614900562964510/the-games-bg.jpg?width=866&height=629");
+    background-size: cover;
+    background-position:center bottom;
+    background-blend-mode: overlay;
+}
+#game-choice .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#game-choice .box-konten{
+    position: relative;
+    text-align: center;
+    
+}
+#game-choice .box-carousel{
+    margin: auto;
+    width: 90%;
+}
+#game-choice .carousel-indicators [data-bs-target]{
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+    border: 1px solid var(--bs-light);
+    border-radius: 50%;
+    margin: 0 7px;
+    opacity: 1;
+}
+#game-choice .carousel-indicators .active{
+    background-color: #FFB548;
+}
+#game-choice .carousel-control-prev,
+#game-choice .carousel-control-next{
+    opacity: 1;
+}
+#game-choice .carousel-control-prev-icon,
+#game-choice .carousel-control-next-icon{
+    position: relative;
+    background-image: none;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}  
+#game-choice .carousel-control-prev-icon{
+    left: -80%;
+    border-right: 15px solid var(--bs-light);
+}   
+#game-choice .carousel-control-prev-icon:hover{
+    border-right-color: #FFB548;
+}   
+#game-choice .carousel-control-next-icon{
+    right: -80%;
+    border-left: 15px solid var(--bs-light);
+}   
+#game-choice .carousel-control-next-icon:hover{
+    border-left-color:#FFB548;
+}   
+
+#features{
+    min-height: 500px;
+    height: 100vh;
+    max-height: 1000px;
+    background-image: 
+    radial-gradient(farthest-side at 0% 0%, transparent 10%,black 230%),
+    url("https://media.discordapp.net/attachments/911613100657094701/911614642076401734/features.jpg?width=943&height=629");
+    background-size: cover;
+    background-position: 52% center;
+    position: relative;
+}
+#features .container{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#features .konten .akordion{
+    height: fit-content;
+    display: flex;
+    margin-top: 20px;
+}
+#features .konten .akordion .gambar{
+    padding: 5px;
+}
+#features .konten .akordion .gambar .circle{
+    position: relative;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+    border: 5px solid var(--bs-light);
+    border-radius: 50%;
+    cursor: pointer;
+}
+#features .konten .akordion .gambar .garis{
+    position: relative;
+    top: -18px;
+    width: 2px;
+    height: 100%;
+    margin: auto;
+    background-color: var(--bs-light);
+    border-radius: 2px;
+}
+#features .konten .akordion .isi-konten{
+    flex-grow: 1;
+    height: fit-content;
+    padding: 5px;
+    color: var(--bs-light);
+}
+#features .konten .akordion .isi-konten p{
+    margin: 0;
+}
+#features .akordion .garis, #features .akordion p{
+    display: none;
+}
+#features .active .garis, #features .active p{
+    display: block;
+}
+#features .active .circle{
+    background-color: #FFB548;
+    box-shadow: 0 3px 25px #FFB548;
+}
+    
+#system-req{
+    min-height: 630px;
+    height: 100vh;
+    max-height: 1080px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: 
+    url("https://media.discordapp.net/attachments/911613100657094701/911614644441985064/Rectangle-systemreq.png?width=943&height=629"),
+    url("https://media.discordapp.net/attachments/911613100657094701/911614899602464828/requirements.png?width=953&height=629");
+    background-size: cover, cover;
+    background-position: center bottom, center bottom;
+    background-blend-mode: overlay;
+}
+#system-req .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+#system-req .container h3{
+    font-size: 14px;
+}
+#system-req .container section{
+    display: flex;
+    flex-direction: column;
+}
+#system-req td{
+    border: 1px solid rgba(151, 151, 151, 0.3);
+    padding: 2%;
+}
+#system-req table{
+    text-align: center;
+    border: 1px solid rgba(151, 151, 151, 0.3);
+    border-collapse: collapse;
+} 
+
+#quotes{
+    min-height: 800px;
+    height: 100vh;
+    max-height: 1000px;
+    background-image: url("https://media.discordapp.net/attachments/911613100657094701/911614900873338940/top-score-bg.png?width=943&height=629"),
+    url("https://media.discordapp.net/attachments/911613100657094701/911614641543725056/bg-top-score.png?width=965&height=629");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#quotes .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 10px 0;
+}
+#quotes .container .box1{
+    text-align: center;
+}
+#quotes .container .box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#quotes .container .box3{
+    padding:3% 0;
+    display: flex;
+}
+#quotes .box3 button{
+    width: 260px;
+    height: 60px;
+    margin: auto;
+}
+#quotes .card{
+    width: 80%;
+    height: auto;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 2%;
+    margin-top: 3%;
+}
+#quotes .card .header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.048);
+}
+#quotes .card .header section{
+    display: flex;
+}
+#quotes .card .foto{
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 5px 3px #FFB548;
+}
+#quotes .card .foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#quotes .card .identitas{
+    margin-left: 25px;
+}
+#quotes .card .identitas .nama{
+    color: #FFB548;
+    margin: 0;
+}
+#quotes .card .identitas .pekerjaan{
+    margin: 0;
+    color: rgba(255, 255, 255, 0.377);
+}
+#quotes .card .body{
+    font-size: 18px;
+    margin-bottom: .4rem;
+}
+#quotes .card .footer{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.377);
+    margin: 0;
+}
+
+#newsletter{
+    background-color: black;
+    height: fit-content;
+    padding: 30px 0;
+}
+#newsletter .konten{
+    text-align: center;
+}
+#newsletter .konten p{
+    text-align: justify;
+}
+#newsletter .konten .call-action .form-floating{
+    color: var(--bs-light);
+}
+#newsletter .konten .call-action .form-control{
+    color: #FFB548;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+#newsletter .konten .call-action .form-control:focus{
+    box-shadow: 0 0 0 0.1rem;
+}
+#newsletter .konten .call-action button{
+    margin-top: 6px;
+}
+
+#footer{
+    background-color: black; 
+    padding: 10px 0 20px 0;  
+}
+#footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+#footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+#footer .menu{
+    width: 50%;
+}
+#footer .privacy{
+    width: 50%;
+}
+#footer .sosmed{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8px;
+}
+#footer .garis{
+    width: 100%;
+    border-top: 1px solid var(--bs-light);
+    margin: 7px 0;
+}
+#footer .copyrigth{
+    width: 100%;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.377);
+}
+
+
+@media only screen and (min-width:768px){
+    #features .container{
+        justify-content: flex-end;
+    }
+    #features .konten{
+        position: relative;
+        right: 16%;
+    }
+
+    #quotes .container{
+        flex-wrap: wrap-reverse;
+        align-content: space-around;
+    }
+    #quotes .container .box1{
+        width: 40%;
+        text-align: left;
+    }
+    #quotes .container .box1 p{
+        max-width: 380px;
+    }
+    #quotes .container .box2{
+        order: -1;
+        height: 100%;
+        justify-content: center;
+        align-items: flex-end;
+        width: 50%;
+    }
+    #quotes .container .card{
+        width: 430px;
+        max-width: 80%;
+    }
+    #quotes .container .box2 .card:nth-child(2){
+        position: relative;
+        left: -20%;
+    }
+    #quotes .container .box3 button{
+        margin: 0;
+    }
+
+    #newsletter .container{
+        background-image: radial-gradient(closest-corner at 17% 50%,transparent 20%,black),
+        url("https://media.discordapp.net/attachments/911613100657094701/911614644140003348/rectanglelast.png?width=404&height=629"),
+        url("https://media.discordapp.net/attachments/911613100657094701/911614900231622746/skull.png?width=396&height=629");
+        background-repeat: no-repeat, no-repeat;
+        background-position: left, left;
+        background-size: auto 100%, auto 100%;
+        display: flex;
+    }
+    #newsletter .container .konten{
+        width: 50%;
+        margin-left: auto;
+        padding-bottom: 200px;
+        padding-top: 100px;
+    }
+    #newsletter .container .konten .call-action{
+        display: flex;
+    }
+    #newsletter .container .konten{
+        text-align: left;
+    }
+    #newsletter .konten .call-action form{
+        width: 60%;
+    }
+    #newsletter .konten .call-action button{
+        margin: 0px 0px 0px auto;
+        width: 35%;
+        font-size: 14px;
+    }
+
+    #footer .container{
+        align-items: center;
+    }
+    #footer .menu{
+        width: fit-content;
+        display: flex;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-right: 5%;  
+    }
+    #footer ul li{
+        white-space: nowrap;
+        padding: 0 5px;
+    }
+    #footer .privacy{
+        order: 1;
+        width: auto;
+        height: fit-content;
+        display: flex;
+        margin-left: auto;
+        line-height: 1em;
+    }
+    #footer .privacy li{
+        border-right: 1px solid var(--bs-light);
+    }
+    #footer .privacy li:nth-child(3){
+        border-right: none;
+    }
+    #footer .sosmed{
+        width: 20%;
+        padding-top: 0;
+        margin-left: auto;
+    }
+    #footer .copyrigth{
+        width: auto;
+    }
+
+}
+@media only screen and (min-width:992px){
+    #game-choice .box-konten{
+        top: -40px;
+        padding-right: 30px;
+        text-align: left;
+    }
+    #game-choice .container{
+        display: flex;
+        justify-content: center;
+    }
+    #game-choice .box-carousel{
+        width: 60%;
+        margin: 0;
+    }
+    #game-choice .carousel-control-prev-icon{
+        left: -70%;
+        border-right: 20px solid var(--bs-light);
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+    } 
+    #game-choice .carousel-control-prev-icon:hover, #game-choice .carousel-control-prev-icon:focus{
+        border-right: 20px solid #FFB548; 
+    } 
+    #game-choice .carousel-control-next-icon{
+        right: -70%;
+        border-left: 20px solid var(--bs-light);
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+    } 
+
+    #system-req{
+        background-blend-mode: unset;
+    }
+    #system-req .container section{
+        position: relative;
+        left: 4%;
+        width: 45%;
+        align-self: flex-start;
+    }
+    #system-req .container section h1{
+        text-align: start;
+    }
+    #system-req .container section table{
+        width: 100%;
+        text-align: left;
+    }
+}
