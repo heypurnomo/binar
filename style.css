@@ -48,7 +48,7 @@
     background-color: #FFB548 !important;
 }
 
-#main-screen{
+#mainScreen{
     position: relative;
     min-height: 500px;
     height: 100vh;
@@ -57,15 +57,15 @@
     background-size: cover;
     background-position: center bottom;
 }
-#main-screen .navbar-dark .navbar-nav .nav-link{
+#mainScreen .navbar-dark .navbar-nav .nav-link{
     color: white !important;
 }
-#main-screen .navbar-brand{
+#mainScreen .navbar-brand{
     font-size: 24px;
     width: 15%;
     letter-spacing: 3px;
 }
-#main-screen .konten{
+#mainScreen .konten{
     position: absolute;
     min-width: 80%;
     top: 50%;
@@ -74,11 +74,11 @@
     justify-content: center;
     text-align: center;
 }
-#main-screen .konten .btn{
+#mainScreen .konten .btn{
     width: 260px;
     height: 60px;
 }
-#main-screen .the-story{
+#mainScreen .the-story{
     position: absolute;
     bottom: 6%;
     left: 50%;
@@ -87,7 +87,7 @@
     text-align: center;
     cursor: pointer;
 }
-#main-screen .the-story .segitiga{
+#mainScreen .the-story .segitiga{
     display: flex;
     margin: 0 auto;
     width: 0;
@@ -96,11 +96,11 @@
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
 }
-#main-screen .the-story:hover .segitiga{
+#mainScreen .the-story:hover .segitiga{
     border-top-color: #FFB548;
 }
 
-#game-choice{
+#about{
     position: relative;
     min-height: 500px;
     height: 100vh;
@@ -111,22 +111,22 @@
     background-position:center bottom;
     background-blend-mode: overlay;
 }
-#game-choice .container{
+#about .container{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#game-choice .box-konten{
+#about .box-konten{
     position: relative;
     text-align: center;
     
 }
-#game-choice .box-carousel{
+#about .box-carousel{
     margin: auto;
     width: 90%;
 }
-#game-choice .carousel-indicators [data-bs-target]{
+#about .carousel-indicators [data-bs-target]{
     height: 15px;
     width: 15px;
     background-color: transparent;
@@ -135,15 +135,15 @@
     margin: 0 7px;
     opacity: 1;
 }
-#game-choice .carousel-indicators .active{
+#about .carousel-indicators .active{
     background-color: #FFB548;
 }
-#game-choice .carousel-control-prev,
-#game-choice .carousel-control-next{
+#about .carousel-control-prev,
+#about .carousel-control-next{
     opacity: 1;
 }
-#game-choice .carousel-control-prev-icon,
-#game-choice .carousel-control-next-icon{
+#about .carousel-control-prev-icon,
+#about .carousel-control-next-icon{
     position: relative;
     background-image: none;
     width: 0;
@@ -151,18 +151,18 @@
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
 }  
-#game-choice .carousel-control-prev-icon{
+#about .carousel-control-prev-icon{
     left: -80%;
     border-right: 15px solid var(--bs-light);
 }   
-#game-choice .carousel-control-prev-icon:hover{
+#about .carousel-control-prev-icon:hover{
     border-right-color: #FFB548;
 }   
-#game-choice .carousel-control-next-icon{
+#about .carousel-control-next-icon{
     right: -80%;
     border-left: 15px solid var(--bs-light);
 }   
-#game-choice .carousel-control-next-icon:hover{
+#about .carousel-control-next-icon:hover{
     border-left-color:#FFB548;
 }   
 
@@ -183,6 +183,9 @@
     justify-content: center;
     align-items: center;
 }
+#features .konten{
+    width: 320px;
+}
 #features .konten .akordion{
     height: fit-content;
     display: flex;
@@ -200,11 +203,14 @@
     border-radius: 50%;
     cursor: pointer;
 }
+#features a[aria-expanded="true"] .circle{
+    background-color: #FFB548;
+    box-shadow: 0 3px 25px #FFB548;
+}
 #features .konten .akordion .gambar .garis{
     position: relative;
-    top: -18px;
     width: 2px;
-    height: 100%;
+    height: calc(100% - 24px);
     margin: auto;
     background-color: var(--bs-light);
     border-radius: 2px;
@@ -212,24 +218,18 @@
 #features .konten .akordion .isi-konten{
     flex-grow: 1;
     height: fit-content;
-    padding: 5px;
+    padding: 5px 5px 0;
     color: var(--bs-light);
+}
+#features .konten .akordion .isi-konten h6{
+    margin-bottom: 0;
 }
 #features .konten .akordion .isi-konten p{
     margin: 0;
 }
-#features .akordion .garis, #features .akordion p{
-    display: none;
-}
-#features .active .garis, #features .active p{
-    display: block;
-}
-#features .active .circle{
-    background-color: #FFB548;
-    box-shadow: 0 3px 25px #FFB548;
-}
+
     
-#system-req{
+#systemReq{
     min-height: 630px;
     height: 100vh;
     max-height: 1080px;
@@ -241,7 +241,7 @@
     background-position: center bottom, center bottom;
     background-blend-mode: overlay;
 }
-#system-req .container{
+#systemReq .container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -249,18 +249,18 @@
     height: 100%;
     text-align: center;
 }
-#system-req .container h3{
+#systemReq .container h3{
     font-size: 14px;
 }
-#system-req .container section{
+#systemReq .container section{
     display: flex;
     flex-direction: column;
 }
-#system-req td{
+#systemReq td{
     border: 1px solid rgba(151, 151, 151, 0.3);
     padding: 2%;
 }
-#system-req table{
+#systemReq table{
     text-align: center;
     border: 1px solid rgba(151, 151, 151, 0.3);
     border-collapse: collapse;
@@ -529,48 +529,48 @@
 
 }
 @media only screen and (min-width:992px){
-    #game-choice .box-konten{
+    #about .box-konten{
         top: -40px;
         padding-right: 30px;
         text-align: left;
     }
-    #game-choice .container{
+    #about .container{
         display: flex;
         justify-content: center;
     }
-    #game-choice .box-carousel{
+    #about .box-carousel{
         width: 60%;
         margin: 0;
     }
-    #game-choice .carousel-control-prev-icon{
+    #about .carousel-control-prev-icon{
         left: -70%;
         border-right: 20px solid var(--bs-light);
         border-top: 25px solid transparent;
         border-bottom: 25px solid transparent;
     } 
-    #game-choice .carousel-control-prev-icon:hover, #game-choice .carousel-control-prev-icon:focus{
+    #about .carousel-control-prev-icon:hover, #about .carousel-control-prev-icon:focus{
         border-right: 20px solid #FFB548; 
     } 
-    #game-choice .carousel-control-next-icon{
+    #about .carousel-control-next-icon{
         right: -70%;
         border-left: 20px solid var(--bs-light);
         border-top: 25px solid transparent;
         border-bottom: 25px solid transparent;
     } 
 
-    #system-req{
+    #systemReq{
         background-blend-mode: unset;
     }
-    #system-req .container section{
+    #systemReq .container section{
         position: relative;
         left: 4%;
         width: 45%;
         align-self: flex-start;
     }
-    #system-req .container section h1{
+    #systemReq .container section h1{
         text-align: start;
     }
-    #system-req .container section table{
+    #systemReq .container section table{
         width: 100%;
         text-align: left;
     }
