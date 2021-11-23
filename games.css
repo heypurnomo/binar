@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+:root{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: calc(3.1px + 0.9vw);
+    text-transform: uppercase;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    font-size: 4.5rem;
+    color:rgba(114, 76, 33, 1);
+}
+.text-title{
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    color: rgba(249, 178, 61, 1);
+}
+.text-nama{
+    font-size: 2.25rem;
+    letter-spacing: 0.1em;
+    color: rgba(0, 0, 0, 1);
+    margin: 1rem 0;
+}
+.text-vs{
+    font-size: 9rem;
+    letter-spacing: 0.1em;
+    color: rgba(189, 0, 0, 1);
+}
+.text.hasil{
+    font-size: 2.375rem;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 1);
+}
+
+#games{
+    min-height: 64rem;
+    height: 100vh;
+    background-color: rgba(156, 131, 95, 1);
+}
+#games header{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+#games header img{
+    height: 3.5rem;
+    width: auto;
+    margin: 0 1.5rem;
+}
+#games .box-games{
+    position: relative;
+    left: 50%;
+    top: 38%;
+    transform: translate(-50%, -50%);
+    width: 1024px;
+    max-width: 90%;
+    display: flex;
+    text-align: center;
+}
+#games .user-choice,
+#games .com-choice{
+    width: 30%;
+}
+#games .choice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#games .choice div{
+    width: 13.9rem;
+    height: 12.75rem;
+    background-color: rgba(196, 196, 196, 1);
+    border-radius: 1.875rem;
+    display: flex;
+}
+#games .choice img{
+    margin: auto;
+}
+#games .choice .batu img{
+    width: 8rem;
+    height: auto;
+}
+#games .choice .kertas img{
+    width: 7.18rem;
+    height: auto;
+}
+#games .choice .gunting img{
+    height: 10rem;
+    width: auto;
+}
+#games .vs-reset{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#games .vs-reset h1{
+    margin-top: auto;
+}
+#games .vs-reset img{
+    margin-top: auto;
+    width: 4.8rem;
+    height: auto;
+}
+
+@media only screen and (min-width:1440px){
+    :root{
+        font-size: 16px;
+    }
+}
+
+
+
+
