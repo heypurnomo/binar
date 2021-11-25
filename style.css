@@ -53,7 +53,7 @@
     min-height: 500px;
     height: 100vh;
     max-height: 1080px;
-    background-image: url("https://media.discordapp.net/attachments/911613100657094701/911614643003338752/main-bg.jpg?width=943&height=629");
+    background-image: url("https://cdn.discordapp.com/attachments/911613100657094701/911614643003338752/main-bg.jpg");
     background-size: cover;
     background-position: center bottom;
 }
@@ -92,7 +92,7 @@
     margin: 0 auto;
     width: 0;
     height: 0;
-    border-top: 15px solid var(--bs-light);
+    border-top: 15px solid white;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
 }
@@ -106,7 +106,7 @@
     height: 100vh;
     max-height: 1000px;
     background-color: rgba(0, 0, 0, 0.25);
-    background-image: url("https://media.discordapp.net/attachments/911613100657094701/911614900562964510/the-games-bg.jpg?width=866&height=629");
+    background-image: url("https://cdn.discordapp.com/attachments/911613100657094701/911614900562964510/the-games-bg.jpg");
     background-size: cover;
     background-position:center bottom;
     background-blend-mode: overlay;
@@ -130,7 +130,7 @@
     height: 15px;
     width: 15px;
     background-color: transparent;
-    border: 1px solid var(--bs-light);
+    border: 1px solid white;
     border-radius: 50%;
     margin: 0 7px;
     opacity: 1;
@@ -153,14 +153,14 @@
 }  
 #about .carousel-control-prev-icon{
     left: -80%;
-    border-right: 15px solid var(--bs-light);
+    border-right: 15px solid white;
 }   
 #about .carousel-control-prev-icon:hover{
     border-right-color: #FFB548;
 }   
 #about .carousel-control-next-icon{
     right: -80%;
-    border-left: 15px solid var(--bs-light);
+    border-left: 15px solid white;
 }   
 #about .carousel-control-next-icon:hover{
     border-left-color:#FFB548;
@@ -172,7 +172,7 @@
     max-height: 1000px;
     background-image: 
     radial-gradient(farthest-side at 0% 0%, transparent 10%,black 230%),
-    url("https://media.discordapp.net/attachments/911613100657094701/911614642076401734/features.jpg?width=943&height=629");
+    url("https://cdn.discordapp.com/attachments/911613100657094701/911614642076401734/features.jpg");
     background-size: cover;
     background-position: 52% center;
     position: relative;
@@ -199,7 +199,7 @@
     z-index: 1;
     width: 24px;
     height: 24px;
-    border: 5px solid var(--bs-light);
+    border: 5px solid white;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -212,14 +212,14 @@
     width: 2px;
     height: calc(100% - 24px);
     margin: auto;
-    background-color: var(--bs-light);
+    background-color: white;
     border-radius: 2px;
 }
 #features .konten .akordion .isi-konten{
     flex-grow: 1;
     height: fit-content;
     padding: 5px 5px 0;
-    color: var(--bs-light);
+    color: white;
 }
 #features .konten .akordion .isi-konten h6{
     margin-bottom: 0;
@@ -235,8 +235,8 @@
     max-height: 1080px;
     background-color: rgba(0, 0, 0, 0.5);
     background-image: 
-    url("https://media.discordapp.net/attachments/911613100657094701/911614644441985064/Rectangle-systemreq.png?width=943&height=629"),
-    url("https://media.discordapp.net/attachments/911613100657094701/911614899602464828/requirements.png?width=953&height=629");
+    url("https://cdn.discordapp.com/attachments/911613100657094701/911614644441985064/Rectangle-systemreq.png"),
+    url("https://cdn.discordapp.com/attachments/911613100657094701/911614899602464828/requirements.png");
     background-size: cover, cover;
     background-position: center bottom, center bottom;
     background-blend-mode: overlay;
@@ -270,8 +270,8 @@
     min-height: 800px;
     height: 100vh;
     max-height: 1000px;
-    background-image: url("https://media.discordapp.net/attachments/911613100657094701/911614900873338940/top-score-bg.png?width=943&height=629"),
-    url("https://media.discordapp.net/attachments/911613100657094701/911614641543725056/bg-top-score.png?width=965&height=629");
+    background-image: url("https://cdn.discordapp.com/attachments/911613100657094701/911614900873338940/top-score-bg.png"),
+    url("https://cdn.discordapp.com/attachments/911613100657094701/911614641543725056/bg-top-score.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -364,7 +364,7 @@
     text-align: justify;
 }
 #newsletter .konten .call-action .form-floating{
-    color: var(--bs-light);
+    color: white;
 }
 #newsletter .konten .call-action .form-control{
     color: #FFB548;
@@ -410,7 +410,7 @@
 }
 #footer .garis{
     width: 100%;
-    border-top: 1px solid var(--bs-light);
+    border-top: 1px solid white;
     margin: 7px 0;
 }
 #footer .copyrigth{
@@ -461,8 +461,8 @@
 
     #newsletter .container{
         background-image: radial-gradient(closest-corner at 17% 50%,transparent 20%,black),
-        url("https://media.discordapp.net/attachments/911613100657094701/911614644140003348/rectanglelast.png?width=404&height=629"),
-        url("https://media.discordapp.net/attachments/911613100657094701/911614900231622746/skull.png?width=396&height=629");
+        url("https://cdn.discordapp.com/attachments/911613100657094701/911614644140003348/rectanglelast.png"),
+        url("https://cdn.discordapp.com/attachments/911613100657094701/911614900231622746/skull.png");
         background-repeat: no-repeat, no-repeat;
         background-position: left, left;
         background-size: auto 100%, auto 100%;
@@ -513,7 +513,7 @@
         line-height: 1em;
     }
     #footer .privacy li{
-        border-right: 1px solid var(--bs-light);
+        border-right: 1px solid white;
     }
     #footer .privacy li:nth-child(3){
         border-right: none;
@@ -544,7 +544,7 @@
     }
     #about .carousel-control-prev-icon{
         left: -70%;
-        border-right: 20px solid var(--bs-light);
+        border-right: 20px solid white;
         border-top: 25px solid transparent;
         border-bottom: 25px solid transparent;
     } 
@@ -553,7 +553,7 @@
     } 
     #about .carousel-control-next-icon{
         right: -70%;
-        border-left: 20px solid var(--bs-light);
+        border-left: 20px solid white;
         border-top: 25px solid transparent;
         border-bottom: 25px solid transparent;
     } 
