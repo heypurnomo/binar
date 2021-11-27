@@ -66,6 +66,15 @@ a{
 #games .com-choice{
     width: 30%;
 }
+#games .user-choice .choice img:hover{
+    animation: rotasi 2s infinite;
+    cursor: pointer;
+}
+@keyframes rotasi {
+    0% {transform: rotateZ(25deg);}
+    80% {transform: rotateZ(-20deg);}
+    100% {transform: rotateZ(25deg);}
+}
 #games .choice{
     display: flex;
     flex-direction: column;
