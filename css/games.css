@@ -31,9 +31,10 @@ a{
     letter-spacing: 0.1em;
     color: rgba(189, 0, 0, 1);
 }
-.text.hasil{
+.text-hasil{
     font-size: 2.375rem;
     letter-spacing: 0.1em;
+    line-height: 3.25rem;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -62,43 +63,44 @@ a{
     display: flex;
     text-align: center;
 }
-#games .user-choice,
-#games .com-choice{
+#games .user-choices,
+#games .com-choices{
     width: 30%;
 }
-#games .user-choice .choice img:hover{
-    animation: rotasi 2s infinite;
+#games .user-choices .choice{
     cursor: pointer;
+}
+#games .user-choices .choice:hover img{
+    animation: rotasi 2s infinite;
 }
 @keyframes rotasi {
     0% {transform: rotateZ(25deg);}
     80% {transform: rotateZ(-20deg);}
     100% {transform: rotateZ(25deg);}
 }
-#games .choice{
+#games .choices{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#games .choice div{
+#games .choices .choice{
     width: 13.9rem;
     height: 12.75rem;
-    background-color: rgba(196, 196, 196, 1);
     border-radius: 1.875rem;
     display: flex;
 }
-#games .choice img{
+#games .choices img{
     margin: auto;
 }
-#games .choice .batu img{
+#games .choices .batu img{
     width: 8rem;
     height: auto;
 }
-#games .choice .kertas img{
+#games .choices .kertas img{
     width: 7.18rem;
     height: auto;
 }
-#games .choice .gunting img{
+#games .choices .gunting img{
     height: 10rem;
     width: auto;
 }
@@ -109,8 +111,21 @@ a{
     justify-content: center;
     align-items: center;
 }
-#games .vs-reset h1{
+#games .vs-reset .box-hasil{
     margin-top: auto;
+}
+#games .vs-reset .hasil{
+    width: 16.94rem;
+    height: 10.4rem;
+    border-radius: 0.625rem;
+    transform: rotateZ(-29deg);
+    background-color: #4c9654;
+    display: none;
+}
+#games .vs-reset .hasil h1{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 #games .vs-reset img{
     margin-top: auto;
@@ -123,7 +138,3 @@ a{
         font-size: 16px;
     }
 }
-
-
-
-
