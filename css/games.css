@@ -70,14 +70,6 @@ a{
 #games .user-choices .choice{
     cursor: pointer;
 }
-#games .user-choices .choice:hover img{
-    animation: rotasi 2s infinite;
-}
-@keyframes rotasi {
-    0% {transform: rotateZ(25deg);}
-    80% {transform: rotateZ(-20deg);}
-    100% {transform: rotateZ(25deg);}
-}
 #games .choices{
     display: flex;
     flex-direction: column;
@@ -131,6 +123,11 @@ a{
     margin-top: auto;
     width: 4.8rem;
     height: auto;
+}
+@keyframes rotasi {
+    0% {transform: rotateZ(25deg);}
+    80% {transform: rotateZ(-20deg);}
+    100% {transform: rotateZ(25deg);}
 }
 
 @media only screen and (min-width:1440px){
