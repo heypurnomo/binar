@@ -2,8 +2,8 @@ const bgColorChoice = "#c4c4c4";
 const bgColorWin = "#4c9654";
 const bgColorDraw = "#035b0c";
 
-const userChoice = document.querySelectorAll(".user-choices .choice");
-const comChoice = document.querySelectorAll(".com-choices .choice");
+const userChoices = document.querySelectorAll(".user-choices .choice");
+const comChoices = document.querySelectorAll(".com-choices .choice");
 const reset = document.getElementsByClassName("reset")[0];
 const hasil = document.getElementsByClassName("hasil")[0];
 const textHasil = document.getElementsByClassName("text-hasil")[0];
@@ -20,10 +20,10 @@ function animationUser(onOff){
     function imgAnimationOff(){
         this.getElementsByTagName("img")[0].style.animation = "none";
     }
-    for (const e of userChoice){
-        e.addEventListener("mouseover", imgAnimation);
-        e.addEventListener("click", imgAnimationOff);
-        e.addEventListener("mouseout", imgAnimationOff);
+    for (const userChoice of userChoices){
+        userChoice.addEventListener("mouseover", imgAnimation);
+        userChoice.addEventListener("click", imgAnimationOff);
+        userChoice.addEventListener("mouseout", imgAnimationOff);
     }
 }
 animationUser(animationUserOn);
@@ -44,6 +44,12 @@ function gameSuit(){
     let player1 = "";
     let com = "";
 
+    //menghilangkan event click pd user choice 
+    for (const userChoice of userChoices){
+        userChoice.removeEventListener("click", gameSuit);
+        userChoice.style.cursor = "default"
+    }
+
     // merubah tampilan pada user
     animationUser(animationUserOff);
     this.style.backgroundColor = bgColorChoice;
@@ -51,7 +57,7 @@ function gameSuit(){
     player1 = this.getAttribute("value"); 
     
     //mengacak angka 0,1,2 u/ pilihan com
-    let random = Math.floor(Math.random()*3);
+    let random = Math.floor(Math.random() * 3);
     if (random === 0){
         com = "batu";
     } else if (random === 1){
@@ -59,50 +65,58 @@ function gameSuit(){
     } else {
         com = "gunting";
     }
-    //merubah bgColor com yg terpilih
-    comChoice[random].style.backgroundColor = bgColorChoice; 
 
-    // membuat peraturan game & merubah tampilan hasil dgn memanggil f hasilGame
-    if (player1 === com) { 
-        hasilGame(draw, bgColorDraw);
-    } else if (player1 === "batu") {
-        (com === "kertas") ? hasilGame(comWin) : hasilGame(player1Win);
-    } else if (player1 === "kertas") {
-        (com === "gunting") ? hasilGame(comWin) : hasilGame(player1Win);
-    } else if (player1 === "gunting") {
-        (com === "batu") ? hasilGame(comWin) : hasilGame(player1Win);
+    //memberi animasi mengacak pilihan com & menampilkan hasil game
+    let pengulangan = 12 + random;
+    for (let i = 0; i <= pengulangan; i++){
+        setTimeout(() => {
+            // animasi acak pilihan com
+            comChoices[i % 3].style.backgroundColor = bgColorChoice;
+            if (i % 3 === 0){
+                comChoices[2].style.backgroundColor = "transparent";  
+            } else {
+                comChoices[(i % 3) - 1].style.backgroundColor = "transparent";
+            }
+            // membuat peraturan game & merubah tampilan hasil dgn memanggil f hasilGame
+            if (i === pengulangan){
+                if (player1 === com) { 
+                    hasilGame(draw, bgColorDraw);
+                } else if (player1 === "batu") {
+                    (com === "kertas") ? hasilGame(comWin) : hasilGame(player1Win);
+                } else if (player1 === "kertas") {
+                    (com === "gunting") ? hasilGame(comWin) : hasilGame(player1Win);
+                } else if (player1 === "gunting") {
+                    (com === "batu") ? hasilGame(comWin) : hasilGame(player1Win);
+                }
+            }
+        }, i * 50 );
     }
 
-    //menghilangkan event click pd user choice & menambah event click pd reset
-    if (player1){ 
-        for (const e of userChoice){
-            e.removeEventListener("click", gameSuit);
-            e.style.cursor = "default"
-        }
+    //menambah event click pd reset
+    setTimeout(() => {
         reset.addEventListener("click", mulaiUlang);
-        reset.style.cursor = "pointer";  
-    }
+        reset.style.cursor = "pointer";
+    }, 1500);
 }
 
 // membuat event click pd user choice yang akan menjalankan f gameSuit saat di click
-for (const e of userChoice){
-    e.addEventListener("click", gameSuit);
+for (const userChoice of userChoices){
+    userChoice.addEventListener("click", gameSuit);
 }
 
 // membuat f u/ memulai ulang game
 function mulaiUlang(){
     vs.style.display = "block";
     hasil.style.display = "none";
-    for (const e of userChoice){
-        e.style.backgroundColor = "transparent";
-        e.style.cursor = "pointer";
-    }
-    for (const e of comChoice){
-        e.style.backgroundColor = "transparent";
-    }
     reset.style.cursor = "default";
-    for (const e of userChoice){
-        e.addEventListener("click", gameSuit);
+    reset.removeEventListener("click", mulaiUlang);
+    for (const comChoice of comChoices){
+        comChoice.style.backgroundColor = "transparent";
+    }
+    for (const userChoice of userChoices){
+        userChoice.style.backgroundColor = "transparent";
+        userChoice.style.cursor = "pointer";
+        userChoice.addEventListener("click", gameSuit);
     }
     animationUser(animationUserOn);
 }
