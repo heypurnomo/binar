@@ -5,6 +5,9 @@
     font-size: calc(3.1px + 0.9vw);
     text-transform: uppercase;
 }
+body{
+    background-color: rgba(156, 131, 95, 1); 
+}
 *{
     margin: 0;
     padding: 0;
@@ -39,9 +42,10 @@ a{
 }
 
 #games{
-    min-height: 64rem;
+    min-height: 400px;
     height: 100vh;
-    background-color: rgba(156, 131, 95, 1);
+    display: flex;
+    flex-direction: column;
 }
 #games header{
     display: flex;
@@ -54,10 +58,8 @@ a{
     margin: 0 1.5rem;
 }
 #games .box-games{
-    position: relative;
-    left: 50%;
-    top: 38%;
-    transform: translate(-50%, -50%);
+    margin: auto;
+    padding: 2% 0;
     width: 1024px;
     max-width: 90%;
     display: flex;
