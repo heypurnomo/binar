@@ -34,7 +34,7 @@ a{
     letter-spacing: 0.1em;
     color: rgba(189, 0, 0, 1);
 }
-.text-hasil{
+#text-hasil{
     font-size: 2.375rem;
     letter-spacing: 0.1em;
     line-height: 3.25rem;
@@ -105,6 +105,21 @@ a{
     justify-content: center;
     align-items: center;
 }
+#games .vs-reset .box-score{
+    display: flex;
+    align-items: center;
+}
+#games .box-score .score{
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    background-color: black;
+    margin: 0 2rem;
+    border-radius: 1rem;
+}
+#games .box-score .score h1{
+    margin: auto;
+}
 #games .vs-reset .box-hasil{
     margin-top: auto;
 }
@@ -126,10 +141,14 @@ a{
     width: 4.8rem;
     height: auto;
 }
-@keyframes rotasi {
+@keyframes rotasi-user {
     0% {transform: rotateZ(25deg);}
     80% {transform: rotateZ(-20deg);}
     100% {transform: rotateZ(25deg);}
+}
+@keyframes rotasi-reset {
+    0% {transform: rotateZ(0deg);}
+    100% {transform: rotateZ(360deg);}
 }
 
 @media only screen and (min-width:1440px){

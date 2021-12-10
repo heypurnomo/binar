@@ -6,13 +6,16 @@ const userChoices = document.querySelectorAll(".user-choices .choice");
 const comChoices = document.querySelectorAll(".com-choices .choice");
 const reset = document.getElementsByClassName("reset")[0];
 const hasil = document.getElementsByClassName("hasil")[0];
-const textHasil = document.getElementsByClassName("text-hasil")[0];
+const textHasil = document.getElementById("text-hasil");
 const vs = document.getElementsByClassName("text-vs")[0];
+const userScore = document.getElementsByClassName("user-score")[0];
+const comScore = document.getElementsByClassName("com-score")[0];
 
-// membuat f animasi pada user
-// keyframes rotasi sudah dibuat di file games.css
-const animationUserOn = "rotasi 2s infinite"; 
+// membuat f animasi pada img user
+// keyframes rotasi-user sudah dibuat di file games.css
+const animationUserOn = "rotasi-user 2s infinite"; 
 const animationUserOff = "none"
+
 function animationUser(onOff){
     function imgAnimation(){
         this.getElementsByTagName("img")[0].style.animation = onOff;
@@ -27,17 +30,6 @@ function animationUser(onOff){
     }
 }
 animationUser(animationUserOn);
-
-// membuat f u/ merubah tampilan hasil
-const player1Win = "player 1 <br>win";
-const comWin = "com <br>win";
-const draw = "draw";
-function hasilGame(text, bgColor = bgColorWin){
-    vs.style.display = "none";
-    hasil.style.display = "block";
-    hasil.style.backgroundColor = bgColor;
-    textHasil.innerHTML = text; 
-}
 
 // membuat f yang akan dipanggil saat menambahkan event click pd user choice
 function gameSuit(){
@@ -94,22 +86,59 @@ function gameSuit(){
 
     //menambah event click pd reset
     setTimeout(() => {
-        reset.addEventListener("click", mulaiUlang);
-        reset.style.cursor = "pointer";
+        resetBtn(resetOn);
     }, 1500);
 }
 
-// membuat event click pd user choice yang akan menjalankan f gameSuit saat di click
-for (const userChoice of userChoices){
-    userChoice.addEventListener("click", gameSuit);
+// membuat f u/ merubah tampilan hasil & score
+const player1Win = "player 1 <br>win";
+const comWin = "com <br>win";
+const draw = "draw";
+let userPoint = 0;
+let comPoint = 0;
+
+function hasilGame(text, bgColor = bgColorWin){
+    vs.style.display = "none";
+    hasil.style.display = "block";
+    hasil.style.backgroundColor = bgColor;
+    textHasil.innerHTML = text;
+    if (text === player1Win){
+        userPoint++;
+        if (userPoint < 10){
+            userScore.innerHTML = "0" + userPoint;
+        } else {
+            userScore.innerHTML = userPoint;
+        }
+    } else if (text === comWin){
+        comPoint++;
+        if (comPoint < 10){
+            comScore.innerHTML = "0" + comPoint;
+        } else {
+            comScore.innerHTML = comPoint;
+        }
+    }
+}
+
+// membuat f u/ on off tombol reset
+// keyframes rotasi-reset sudah dibuat di file games.css
+const resetOn = ["on", "pointer", "rotasi-reset 2s infinite"];
+const resetOff = ["off", "default", "none"];
+
+function resetBtn(onOff){
+    if (onOff[0] === "on") {
+        reset.addEventListener("click", mulaiUlang);  
+    } else {
+        reset.removeEventListener("click", mulaiUlang);
+    }
+    reset.style.cursor = onOff[1];
+    reset.style.animation = onOff[2];
 }
 
 // membuat f u/ memulai ulang game
 function mulaiUlang(){
     vs.style.display = "block";
     hasil.style.display = "none";
-    reset.style.cursor = "default";
-    reset.removeEventListener("click", mulaiUlang);
+    resetBtn(resetOff);
     for (const comChoice of comChoices){
         comChoice.style.backgroundColor = "transparent";
     }
@@ -119,4 +148,9 @@ function mulaiUlang(){
         userChoice.addEventListener("click", gameSuit);
     }
     animationUser(animationUserOn);
+}
+
+// membuat event click pd user choice yang akan menjalankan f gameSuit saat di click
+for (const userChoice of userChoices){
+    userChoice.addEventListener("click", gameSuit);
 }
