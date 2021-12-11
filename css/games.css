@@ -72,6 +72,9 @@ a{
 #games .user-choices .choice{
     cursor: pointer;
 }
+#games .user-choices .hover:hover img{
+    animation: rotasi-user 2s infinite;
+}
 #games .choices{
     display: flex;
     flex-direction: column;
