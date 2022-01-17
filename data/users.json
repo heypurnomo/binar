@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "email": "sunday@gmail.com",
+        "password": "sunday00",
+        "nama": "sunday"
+    },
+    {
+        "id": 3,
+        "email": "monday@gmail.com",
+        "password": "monday00",
+        "nama": "monday"
+    },
+    {
+        "id": 4,
+        "email": "carina@gmail.com",
+        "password": "carina00",
+        "nama": "carina"
+    },
+    {
+        "id": 5,
+        "email": "pipin@gmail.com",
+        "password": "pipin00",
+        "nama": "pipin"
+    },
+    {
+        "id": 6,
+        "email": "angga@gmail.com",
+        "password": "angga00",
+        "nama": "angga"
+    },
+    {
+        "id": 7,
+        "email": "purnomo@gmail.com",
+        "password": "purnomo00",
+        "nama": "purnomo"
+    }
+]
