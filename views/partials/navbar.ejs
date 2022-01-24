@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark bg-opacity-50">
+    <div class="container">
+      <a class="navbar-brand sans-700" href="/">LOGO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav sans-700 text-uppercase me-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/rank">Rank</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav sans-400">
+          <% if (!login) { %>
+          <li class="nav-item">
+            <a class="nav-link" href="/sign-up">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login">Login</a>
+          </li>
+          <% } else if (login) { %>
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              <%= username %> 
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="/profil">Profil</a></li>
+              <li><a class="dropdown-item" href="/api/v1/logout">Logout</a></li>
+            </ul>
+          <% } %> 
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>

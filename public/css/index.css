@@ -57,7 +57,7 @@
     background-size: cover;
     background-position: center bottom;
 }
-#mainScreen .navbar-dark .navbar-nav .nav-link{
+/* #mainScreen .navbar-dark .navbar-nav .nav-link{
     color: white !important;
 }
 #mainScreen .navbar-brand{
@@ -65,6 +65,9 @@
     width: 15%;
     letter-spacing: 3px;
 }
+#mainScreen .nav-item{
+    cursor: pointer;
+} */
 #mainScreen .konten{
     position: absolute;
     min-width: 80%;
@@ -380,7 +383,7 @@
     margin-top: 6px;
 }
 
-#footer{
+/* #footer{
     background-color: black; 
     padding: 10px 0 20px 0;  
 }
@@ -419,7 +422,7 @@
     width: 100%;
     font-size: 14px;
     color: rgba(255, 255, 255, 0.377);
-}
+} */
 
 
 @media only screen and (min-width:768px){
@@ -491,7 +494,7 @@
         font-size: 14px;
     }
 
-    #footer .container{
+    /* #footer .container{
         align-items: center;
     }
     #footer .menu{
@@ -527,7 +530,7 @@
     }
     #footer .copyrigth{
         width: auto;
-    }
+    } */
 
 }
 @media only screen and (min-width:992px){

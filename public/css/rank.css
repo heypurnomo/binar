@@ -1,0 +1,70 @@
+:root{
+    --primary: rgba(249, 178, 61, 1);
+    --secondary: rgba(156, 131, 95, 1);
+    --grey: rgba(255, 255, 255, 0.5);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: var(--secondary); 
+}
+#rank{
+    align-self: center;
+    position: relative;
+    width: 600px;
+    max-width: 80%;
+    min-height: 500px;
+    background: var(--secondary);
+    padding: 20px;
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+#rank h1{
+    color: var(--primary);
+}
+#rank table{
+    width: 100%;
+    margin-top: 10px;
+    cursor: default;
+}
+#rank thead td{
+    font-weight: 700;
+    padding: 10px;
+}
+#rank td{
+    padding: 10px;
+}
+#rank tbody tr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+#rank tbody tr:last-child{
+    border-bottom: none;
+}
+#rank tbody tr:hover{
+    background-color: var(--primary);
+}
+#rank tbody .aktif{
+    background-color: var(--primary);
+}
+#rank td:first-child{
+    width: 10%;
+    text-align: center;
+}
+#rank td:nth-child(2){
+    width: 60%;
+}
+#rank td:nth-child(3),
+#rank td:nth-child(4),
+#rank td:nth-child(5){
+    width: 10%;
+    text-align: center;
+}
