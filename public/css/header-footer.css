@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+*{
+    box-sizing: border-box;
+}
+.sans-700{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: white;
+}
+.sans-400{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+}
+
+nav .navbar-nav .nav-link{
+    color: white !important;
+}
+nav .navbar-brand{
+    font-size: 24px;
+    width: 15%;
+    letter-spacing: 3px;
+}
+nav .nav-item{
+    cursor: pointer;
+}
+
+#footer{
+    width: 100%;
+    background-color: black; 
+    padding: 10px 0 20px 0;  
+}
+#footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+#footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+#footer .menu{
+    width: 50%;
+}
+#footer .privacy{
+    width: 50%;
+}
+#footer .sosmed{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8px;
+}
+#footer .garis{
+    width: 100%;
+    border-top: 1px solid white;
+    margin: 7px 0;
+}
+#footer .copyrigth{
+    width: 100%;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.377);
+}
+
+@media only screen and (min-width:768px){
+    #footer .container{
+        align-items: center;
+    }
+    #footer .menu{
+        width: fit-content;
+        display: flex;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-right: 5%;  
+    }
+    #footer ul li{
+        white-space: nowrap;
+        padding: 0 5px;
+    }
+    #footer .privacy{
+        order: 1;
+        width: auto;
+        height: fit-content;
+        display: flex;
+        margin-left: auto;
+        line-height: 1em;
+    }
+    #footer .privacy li{
+        border-right: 1px solid white;
+    }
+    #footer .privacy li:nth-child(3){
+        border-right: none;
+    }
+    #footer .sosmed{
+        width: 20%;
+        padding-top: 0;
+        margin-left: auto;
+    }
+    #footer .copyrigth{
+        width: auto;
+    }
+}

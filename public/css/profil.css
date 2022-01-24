@@ -1,0 +1,122 @@
+:root{
+    --primary: rgba(249, 178, 61, 1);
+    --secondary: rgba(156, 131, 95, 1);
+    --grey: rgba(255, 255, 255, 0.5);
+}
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: var(--secondary); 
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.card-wrap {
+    width: 300px;
+    background-color: transparent;
+    border: none;
+    margin: 50px auto;
+    z-index: 1;
+}
+.card-wrap .head {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    padding: 2px;
+    border-radius: 50%;
+    background-clip: content-box;
+    background-color: pink;
+}
+.card-wrap img{
+    width: 100%;
+    border-radius: 50%;
+}
+.card-wrap .head::after {
+    content: '';
+    display: block;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+.card-wrap .body {
+    width: 100%;
+    height: 330px;
+    top: -75px;
+    z-index: -1;
+    padding: 80px 15px 15px;
+    border-radius: 6px;
+    border: 2px solid black;
+    background-color: var(--secondary);
+    overflow: hidden;
+}
+.card-wrap .body .username {
+    text-align: center;
+}
+.card-wrap form label{
+    position: absolute;
+    line-height: 1.1;
+    margin: 1px 0 0 2px;
+}
+.card-wrap form textarea{
+    background-color: transparent;
+    font-size: 14px;
+    text-indent: 35px;
+    width: 100%;
+    border:none;
+    resize: none;
+    color: black;
+    overflow-x: visible;
+}
+.card-wrap form textarea:focus{ 
+    outline: none !important;
+    border: 2px solid var(--primary);
+    box-shadow: 1px 1px white,
+    -1px -1px white;
+    overflow-x: visible;
+}
+.card-wrap .action {
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    height: 30px;
+    width: calc(100% - 30px);
+    justify-content: space-between;
+}
+.card-wrap .action a{
+    width: 48%;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid var(--primary);
+    border-radius: 15px;
+}
+.card-wrap .action a:hover{
+    background-color: var(--primary);
+}
+.card-wrap .action button{
+    all: unset;
+    width: 48%;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid var(--primary);
+    border-radius: 15px;
+    cursor: pointer;
+}
+.card-wrap .action button:hover{
+    background-color: var(--primary);
+}

@@ -10,30 +10,28 @@
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     min-height: 100vh;
     background-color: var(--secondary); 
 }
 a{
     text-decoration: none;
 }
-.header{
-    display: flex;
-    height: 160px;
-    width: 100vw;
-    margin-bottom: 70px;
+.center{
+    margin: 50px 0;
 }
-.logo{
-    font-weight: 700;
-    font-size: 25px;
-    letter-spacing: 0.5;
-    color: var(--primary);
-    margin: auto auto 0;
+#message{
+   min-width: min-content; 
+   max-width: 550px;
+   height: 74px;
+   margin: 0 auto;
 }
-
 #content{
     display: flex;
     height: 365px;
-    width: 100vw;
+    width: 100%;
     padding: 0 20px;
     margin-bottom: 20px;
 }
@@ -47,6 +45,14 @@ a{
     background-color: rgba(156, 131, 95, 0.5);
     border: 1px solid var(--grey);
     border-radius: 6px;
+}
+#content .profil-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 550px;
+    height: 100%;
+    margin: 0 auto;
 }
 #content .login{
     position: absolute;
@@ -86,6 +92,9 @@ a{
     border: 1px solid var(--primary);
     border-radius: 6px;
     border-top-left-radius: 0px;
+}
+#content .form-profil{
+    top: 0;
 }
 #content a{
     display: flex;

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/meta') %>
+    <title><%= title %> </title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <%- include('./partials/navbar',{login: false}) %>
+    <div class="center">
+        <div id="message">
+            <% if (message !== undefined) { %>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <%= message %> 
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            <% } %>
+        </div>
+        <div id="content">
+            <div class="login-wrap <% if (title ==='Sign-up') { %> sign-up-active <% } %>">
+                <div class="login">
+                    <a href="/login"><span class="menu-text"><i class="bi bi-box-arrow-in-right"></i>Login</span></a>
+                </div>
+                <div class="sign-up">
+                    <a href="/sign-up"><span class="menu-text"><i class="bi bi-person-plus-fill"></i>Sign-Up</span></a>
+                </div>
+                <form action="<% if (title === 'Sign-up') { %>/api/v1/sign-up<% } else {%>/api/v1/login<% } %>" method="post">
+                    <div class="input-wrap">
+                        <i class="bi bi-person"></i>
+                        <input type="text" id="username" name="username" placeholder="Username" maxlength="15" value="<%= username %>">
+                    </div>
+                    <div class="input-wrap">
+                        <i class="bi bi-key"></i>
+                        <input type="password" id="password" name="password" placeholder="Password" value="<%= password %>">
+                    </div>
+                    <% if (title === 'Sign-up') { %>
+                        <div class="input-wrap">
+                            <i class="bi bi-key"></i>
+                            <input type="password" id="password2" name="password2" placeholder="Password" value="<%= password2 %>">
+                        </div>
+                    <% } %>
+                    <button type="submit"><%= title %> </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <%- include('./partials/footer') %>
+    <script src="js/form.js"></script>
+</body>
+</html>

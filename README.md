@@ -1,1 +1,2 @@
-# binar_chapter3 dan selanjutnya
+# binar chapter 5
+menjalankan servernya pakai node aja, kalau pakai nedomen dilaptopku error pas bikin userbaru, file data.json nya ada perubahan sehingga server restart sendiri, akibatnya sessionnya juga terreset
