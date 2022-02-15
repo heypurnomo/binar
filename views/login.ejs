@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/form.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <title>Dashborad user</title>
+</head>
+<body>
+    <h1 id="form-title">Login</h1>
+    <div class="content-wrap">
+        <% if (message) { %>
+            <div id="message">
+                <p><%= message %></p>
+                <i class="bi bi-x"></i>
+            </div>
+        <% } %>
+        <div id="form-wrap">
+            <form action="/login" method="post">
+                <div class="input-wrap">
+                    <i class="bi bi-person"></i>
+                    <input type="text" value="<%= username %>" name="username" placeholder="Username" maxlength="25">
+                </div>
+                <div class="input-wrap">
+                    <i class="bi bi-key"></i>
+                    <input type="password" value="<%= password %>" name="password" placeholder="Password">
+                </div>
+                <button type="submit">Sign in</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/form.js"></script>
+</body>
+</html>

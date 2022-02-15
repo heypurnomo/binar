@@ -1,16 +1,8 @@
-// const loginWrap = document.getElementsByClassName('login-wrap')[0];
-// const signUp = document.getElementsByClassName('sign-up')[0];
-// const login = document.getElementsByClassName('login')[0];
 const inputWraps = document.getElementsByClassName('input-wrap');
-const inputs = document.querySelectorAll('#content .input-wrap input');
-const icons = document.querySelectorAll('#content .input-wrap i');
-
-// signUp.addEventListener('click', () => {
-//     loginWrap.classList.add('sign-up-active')
-// })
-// login.addEventListener('click', () => {
-//     loginWrap.classList.remove('sign-up-active')
-// })
+const inputs = document.querySelectorAll('#form-wrap .input-wrap input');
+const icons = document.querySelectorAll('#form-wrap .input-wrap i');
+const x = document.querySelector('#message i');
+const message = document.getElementById('message');
 
 for (let i = 0; i < inputs.length; i++) {
     inputs[i].addEventListener('focus', () => {
@@ -24,3 +16,10 @@ for (let i = 0; i < inputs.length; i++) {
         icons[i].style.color = 'var(--grey)'
     })
 }
+
+if (x) {
+    x.addEventListener('click', () => {
+        message.style.display = 'none';
+    })
+}
+

@@ -1,2 +1,7 @@
-# binar chapter 5
-menjalankan servernya pakai node aja, kalau pakai nedomen dilaptopku error pas bikin userbaru, file data.json nya ada perubahan sehingga server restart sendiri, akibatnya sessionnya juga terreset
+sebelum menjalankan app, setting myConfig di folder config
+
+account admin
+
+username: admin
+
+passsword: admin00

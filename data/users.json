@@ -1,1 +1,68 @@
-[{"id":1,"username":"nami","password":"nami00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":169,"lose":171,"winPerLose":0.99}},{"id":2,"username":"robin","password":"robin00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":145,"lose":159,"winPerLose":0.91}},{"id":3,"username":"vivi","password":"vivi00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":134,"lose":172,"winPerLose":0.78}},{"id":4,"username":"brook","password":"brook00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":177,"lose":140,"winPerLose":1.26}},{"id":5,"username":"sanji","password":"sanji00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":182,"lose":147,"winPerLose":1.24}},{"id":6,"username":"zoro","password":"zoro00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":108,"lose":159,"winPerLose":0.68}},{"id":7,"username":"usopp","password":"usopp00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":105,"lose":108,"winPerLose":0.97}},{"id":8,"username":"choper","password":"choper00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":121,"lose":118,"winPerLose":1.03}},{"id":9,"username":"franky","password":"franky00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":124,"lose":172,"winPerLose":0.72}},{"id":10,"username":"jinbei","password":"jinbei00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":180,"lose":178,"winPerLose":1.01}},{"id":11,"username":"luffy","password":"luffy00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":131,"lose":110,"winPerLose":1.19}},{"id":12,"username":"ace","password":"ace00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":108,"lose":154,"winPerLose":0.7}},{"id":13,"username":"sabo","password":"sabo00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":122,"lose":169,"winPerLose":0.72}},{"id":14,"username":"doflamingo","password":"doflamingo00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":196,"lose":143,"winPerLose":1.37}},{"id":15,"username":"smoker","password":"smoker00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":148,"lose":146,"winPerLose":1.01}},{"id":16,"username":"coby","password":"coby00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":163,"lose":116,"winPerLose":1.41}},{"id":17,"username":"mihawk","password":"mihawk00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":133,"lose":162,"winPerLose":0.82}},{"id":18,"username":"boa","password":"boa00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":149,"lose":188,"winPerLose":0.79}},{"id":19,"username":"pudding","password":"pudding00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":117,"lose":180,"winPerLose":0.65}},{"id":20,"username":"smoothie","password":"smoothie00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":196,"lose":112,"winPerLose":1.75}},{"id":21,"username":"reiju","password":"reiju00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":194,"lose":131,"winPerLose":1.48}},{"id":22,"username":"sora","password":"sora00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":181,"lose":161,"winPerLose":1.12}},{"id":23,"username":"yamato","password":"yamato00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":113,"lose":151,"winPerLose":0.75}},{"id":24,"username":"blackmaria","password":"blackmaria00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":111,"lose":125,"winPerLose":0.89}},{"id":25,"username":"king","password":"king00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":199,"lose":141,"winPerLose":1.41}},{"id":26,"username":"jack","password":"jack00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":181,"lose":143,"winPerLose":1.27}},{"id":27,"username":"queen","password":"queen00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":115,"lose":145,"winPerLose":0.79}},{"id":28,"username":"katakuri","password":"katakuri00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":119,"lose":179,"winPerLose":0.66}},{"id":29,"username":"law","password":"law00","bio":"tambahkan beberapa kata tentang dirimu","score":{"win":152,"lose":156,"winPerLose":0.97}}]
+[
+    {
+        "username": "admin",
+        "email": "admin@admin.com",
+        "password": "admin00",
+        "role": "admin"
+    },
+    {
+        "username": "bpellman0",
+        "email": "dlowis0@storify.com",
+        "password": "q2uENcdc",
+        "role": "user"
+    },
+    {
+        "username": "halpine1",
+        "email": "rvint1@360.cn",
+        "password": "wAwjjI",
+        "role": "user"
+    },
+    {
+        "username": "tlebarr2",
+        "email": "jmacnalley2@spotyfy.com",
+        "password": "pclJqWRhp3Pa",
+        "role": "user"
+    },
+    {
+        "username": "qbelshaw3",
+        "email": "hpinching3@face.com",
+        "password": "3jK6cLiQ",
+        "role": "user"
+    },
+    {
+        "username": "ajupp4",
+        "email": "jgarrison4@g.co",
+        "password": "4UIMlk",
+        "role": "user"
+    },
+    {
+        "username": "adumigan5",
+        "email": "repp5@newsvine.com",
+        "password": "e6fKxvUvLuMm",
+        "role": "user"
+    },
+    {
+        "username": "rquarless6",
+        "email": "vbeddie6@hc360.com",
+        "password": "i3rzko",
+        "role": "user"
+    },
+    {
+        "username": "jgroome7",
+        "email": "cboatswain7@goo.gl",
+        "password": "RQCCk6SA7pNr",
+        "role": "user"
+    },
+    {
+        "username": "ecorbet8",
+        "email": "kkelcey8@phpbb.com",
+        "password": "yvz86gO4XZ4",
+        "role": "user"
+    },
+    {
+        "username": "sconnah9",
+        "email": "nmcneilley9@w3school.org",
+        "password": "1mMkiyx4",
+        "role": "user"
+    }
+]
