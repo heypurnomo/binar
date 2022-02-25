@@ -1,0 +1,59 @@
+[
+    {
+        "userId": 9,
+        "win": 21,
+        "draw": 46,
+        "lose": 41
+    },
+    {
+        "userId": 4,
+        "win": 27,
+        "draw": 25,
+        "lose": 49
+    },
+    {
+        "userId": 7,
+        "win": 34,
+        "draw": 25,
+        "lose": 40
+    },
+    {
+        "userId": 3,
+        "win": 31,
+        "draw": 38,
+        "lose": 43
+    },
+    {
+        "userId": 6,
+        "win": 46,
+        "draw": 45,
+        "lose": 42
+    },
+    {
+        "userId": 2,
+        "win": 27,
+        "draw": 49,
+        "lose": 41
+    },
+    {
+        "win": 44,
+        "draw": 27,
+        "lose": 44
+    },
+    {
+        "win": 23,
+        "draw": 36,
+        "lose": 42
+    },
+    {
+        "userId": 5,
+        "win": 45,
+        "draw": 23,
+        "lose": 50
+    },
+    {
+        "win": 31,
+        "draw": 43,
+        "lose": 44
+    }
+]

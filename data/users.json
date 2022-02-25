@@ -1,0 +1,68 @@
+[
+    {
+        "username": "admin",
+        "email": "admin@admin.com",
+        "password": "admin00",
+        "role": "admin"
+    },
+    {
+        "username": "bpellman0",
+        "email": "dlowis0@storify.com",
+        "password": "q2uENcdc",
+        "role": "user"
+    },
+    {
+        "username": "halpine1",
+        "email": "rvint1@360.cn",
+        "password": "wAwjjI",
+        "role": "user"
+    },
+    {
+        "username": "tlebarr2",
+        "email": "jmacnalley2@spotyfy.com",
+        "password": "pclJqWRhp3Pa",
+        "role": "user"
+    },
+    {
+        "username": "qbelshaw3",
+        "email": "hpinching3@face.com",
+        "password": "3jK6cLiQ",
+        "role": "user"
+    },
+    {
+        "username": "ajupp4",
+        "email": "jgarrison4@g.co",
+        "password": "4UIMlk",
+        "role": "user"
+    },
+    {
+        "username": "adumigan5",
+        "email": "repp5@newsvine.com",
+        "password": "e6fKxvUvLuMm",
+        "role": "user"
+    },
+    {
+        "username": "rquarless6",
+        "email": "vbeddie6@hc360.com",
+        "password": "i3rzko",
+        "role": "user"
+    },
+    {
+        "username": "jgroome7",
+        "email": "cboatswain7@goo.gl",
+        "password": "RQCCk6SA7pNr",
+        "role": "user"
+    },
+    {
+        "username": "ecorbet8",
+        "email": "kkelcey8@phpbb.com",
+        "password": "yvz86gO4XZ4",
+        "role": "user"
+    },
+    {
+        "username": "sconnah9",
+        "email": "nmcneilley9@w3school.org",
+        "password": "1mMkiyx4",
+        "role": "user"
+    }
+]

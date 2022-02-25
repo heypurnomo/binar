@@ -1,0 +1,68 @@
+[
+    {
+        "userId": 8,
+        "firstName": "Reginauld",
+        "lastName": "Denisard",
+        "gender": "Male",
+        "birthDay": "10/06/1994"
+    },
+    {
+        "firstName": "Gerianna",
+        "lastName": "MacPhaden",
+        "gender": "Male",
+        "birthDay": "30/06/1998"
+    },
+    {
+        "userId": 5,
+        "firstName": "Alessandro",
+        "lastName": "Stainton",
+        "gender": "Female",
+        "birthDay": "05/06/1995"
+    },
+    {
+        "userId": 2,
+        "firstName": "Greer",
+        "lastName": "Ionn",
+        "gender": "Male",
+        "birthDay": "29/06/1990"
+    },
+    {
+        "firstName": "Aldrich",
+        "lastName": "Fulger",
+        "gender": "Male",
+        "birthDay": "21/09/1996"
+    },
+    {
+        "firstName": "Niki",
+        "lastName": "McAvin",
+        "gender": "Male",
+        "birthDay": "02/07/1991"
+    },
+    {
+        "userId": 3,
+        "firstName": "Jeddy",
+        "lastName": "Whistan",
+        "gender": "Female",
+        "birthDay": "09/11/1993"
+    },
+    {
+        "firstName": "David",
+        "lastName": "Dowtry",
+        "gender": "Male",
+        "birthDay": "28/03/1997"
+    },
+    {
+        "userId": 6,
+        "firstName": "Kristal",
+        "lastName": "Booth",
+        "gender": "Female",
+        "birthDay": "25/08/1997"
+    },
+    {
+        "userId": 9,
+        "firstName": "Laurice",
+        "lastName": "Outhwaite",
+        "gender": "Male",
+        "birthDay": "23/03/1998"
+    }
+]
